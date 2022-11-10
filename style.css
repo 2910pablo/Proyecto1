@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+    margin: 0;
+}
+header{
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: rgb(58, 58, 255, 0.8);
+    color: white;
+    padding: 1px 10px 1px 10px;
+    justify-content: space-between;
+}
+.header nav {
+    display: flex;
+    flex-direction: row;
+}
+.cuerpo {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+.cuerpocentral {
+    padding: 1px 10px;
+}
+.cuerpo>div {
+    margin: 10px;
+}
+body ul {
+    list-style: none;
+    padding: 0%;
+}
