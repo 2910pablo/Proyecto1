@@ -17,18 +17,21 @@
         </div>
     </header>
     <section id="foto-inicial">
-        <h1>VILLA ANA MARÍA</h1>
+        <h1>Villa Ana María</h1>
     </section>
     <section id="presentacion">
         <h2>QUIENES SOMOS</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quos dignissimos similique, vero voluptas aliquam soluta eligendi earum, hic iure vel ipsa. Repellendus suscipit vitae animi consectetur doloribus id reiciendis.</p>
         <h3>NUESTROS SERVICIOS</h3>
         <div id="contenedorcartas">
-            <div class="carta">3 DORMITORIOS<br><img src="/fotografias/DORMITORIO.png" alt="DORMITORIOS" width="70"></div>
-            <div class="carta">2 BAÑOS<br><img src="/fotografias/BAÑO.png" alt="BAÑOS" height="70"></div>
-            <div class="carta">PISCINA<br><img src="/fotografias/PISCINA2.png" alt="PISCINA" width="70"></div>
-            <div class="carta">BARBACOA<br><img src="/fotografias/BBQ.png" alt="BBQ" width="70"></div>
+            <div id = "cartadormitorio" class="carta">3 DORMITORIOS<br><img src="/fotografias/DORMITORIO.png" alt="DORMITORIOS" width="100"></div>
+            <div class="carta">2 BAÑOS<br><img src="/fotografias/BAÑO.png" alt="BAÑOS" height="100"></div>
+            <div class="carta">PISCINA<br><img src="/fotografias/PISCINA2.png" alt="PISCINA" width="100"></div>
+            <div class="carta">BARBACOA<br><img src="/fotografias/BBQ.png" alt="BBQ" width="100"></div>
         </div>
+    </section>
+    <section id="DORMITORIOS" style="display: none;">
+        <img src="/fotografias/dormitorio1.jpg" alt="dormitorio" width="50%">
     </section>
     <section id="contacto">
         <h2>CONTACTO</h2>
@@ -49,4 +52,16 @@
 
     </section>
 </body>
+<script>
+        let botones = document.getElementById("cartadormitorio");
+        let divDormitorios = document.getElementById("DORMITORIOS");
+    funcionAbrirCarta = function() {
+        if (divDormitorios.style.display=="none") {
+            divDormitorios.style.display = "Block";
+        } else {
+            divDormitorios.style.display = "none";
+        }
+    }
+    botones.addEventListener('click',funcionAbrirCarta)
+</script>
 </html>

@@ -62,6 +62,10 @@ body ul {
     font-weight: bold;
     font-family: 'sans-serif', cursive;
     text-shadow: 2px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 45px;
+    text-shadow: 0px 0px 5px black;
+    padding: 101px 0px 0px 0px;
 }
 #presentacion {
     display: flex;
@@ -81,7 +85,31 @@ h2 {
 #contenedorcartas {
     display: flex;
     justify-content: space-between;
+    margin: 0px 20vw;
 }
-#contenedorcartas { /* QUEDA PONERLO VERSION MOVIL  */
-    margin: 0px 100px;
+.carta {
+    width: 200px;
+    height: 150px;
+    padding: 5px;
+    font-weight: bold;
+    border: 1px rgba(0,0,0,0.1) solid;
+    border-radius: 5px;
+    background-color: rgba(238, 238, 238, 0.247);
+}
+
+.carta:hover {
+    background-color: #eee;
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+#DORMITORIOS {
+    text-align: center;
+    margin: 15px 0px;
+    transition: all 0.3s ease;
+}
+
+#DORMITORIOS img {
+    border-radius: 15px;
 }
