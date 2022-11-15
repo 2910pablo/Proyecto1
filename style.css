@@ -123,3 +123,39 @@ h2 {
     text-align: center;
     margin: 15px 0px;
 }
+#contenedor-mapa {
+    align-content: center;
+    text-align: center;
+
+}
+#mapa {
+    margin: 0;
+    border-radius: 15px;
+}
+#mapa:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+footer {
+    margin: 5px 20px 0px 20px;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px rgba(85, 85, 85,0.5) solid;
+}
+
+footer>p,div {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 5px 0px 5px;
+}
+footer a:hover {
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+    transition: color 0.3s ease;
+}
