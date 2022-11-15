@@ -104,12 +104,22 @@ h2 {
     transition: all 0.3s ease;
 }
 
-#DORMITORIOS {
+.fotos-a-expandir {
     text-align: center;
     margin: 15px 0px;
-    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s ease-out ;
 }
 
-#DORMITORIOS img {
+.fotos-a-expandir img {
     border-radius: 15px;
+}
+
+.abrir_cerrar {
+    max-height: 600px;
+    transition: max-height 0.7s ease-in ;
+    text-align: center;
+    margin: 15px 0px;
 }

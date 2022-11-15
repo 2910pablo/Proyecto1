@@ -16,27 +16,43 @@
             <a href="#ubicacion">UBICACION</a>
         </div>
     </header>
+
     <section id="foto-inicial">
         <h1>Villa Ana María</h1>
     </section>
+
     <section id="presentacion">
         <h2>QUIENES SOMOS</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quos dignissimos similique, vero voluptas aliquam soluta eligendi earum, hic iure vel ipsa. Repellendus suscipit vitae animi consectetur doloribus id reiciendis.</p>
         <h3>NUESTROS SERVICIOS</h3>
         <div id="contenedorcartas">
-            <div id = "cartadormitorio" class="carta">3 DORMITORIOS<br><img src="/fotografias/DORMITORIO.png" alt="DORMITORIOS" width="100"></div>
-            <div class="carta">2 BAÑOS<br><img src="/fotografias/BAÑO.png" alt="BAÑOS" height="100"></div>
-            <div class="carta">PISCINA<br><img src="/fotografias/PISCINA2.png" alt="PISCINA" width="100"></div>
-            <div class="carta">BARBACOA<br><img src="/fotografias/BBQ.png" alt="BBQ" width="100"></div>
+            <button class="carta">3 DORMITORIOS<br><img src="/fotografias/DORMITORIO.png" alt="DORMITORIOS" width="100"></button>
+            <button class="carta">2 BAÑOS<br><img src="/fotografias/BAÑO.png" alt="BAÑOS" height="100"></button>
+            <button class="carta">PISCINA<br><img src="/fotografias/PISCINA2.png" alt="PISCINA" width="100"></button>
+            <button class="carta">BARBACOA<br><img src="/fotografias/BBQ.png" alt="BBQ" width="100"></button>
         </div>
     </section>
-    <section id="DORMITORIOS" style="display: none;">
-        <img src="/fotografias/dormitorio1.jpg" alt="dormitorio" width="50%">
+    
+    <section>
+        <div class="fotos-a-expandir">
+            <img src="/fotografias/dormitorio1.jpg" alt="dormitorio" width="50%">
+        </div>
+        <div class="fotos-a-expandir">
+            <img src="/fotografias/baño1.jpg" alt="baño" width="50%">
+        </div>
+        <div class="fotos-a-expandir">
+            <img src="/fotografias/piscina.jpg" alt="piscina" width="50%">
+        </div>
+        <div class="fotos-a-expandir">
+            <img src="/fotografias/bbq1.jpg" alt="BBQ" width="50%">
+        </div>
     </section>
+
     <section id="contacto">
         <h2>CONTACTO</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, ipsum dignissimos veritatis earum enim mollitia quae. Amet dicta odit dignissimos? At, sint aut expedita dolorum assumenda deserunt soluta consectetur rem?</p>
     </section>
+
     <section id="ubicacion">
         <h2>UBICACION</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi est magnam consequatur explicabo odio ad, tempora nam, sequi impedit fugiat suscipit qui modi quasi nobis repellendus ab atque molestias reprehenderit.</p>
@@ -51,17 +67,9 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi est magnam consequatur explicabo odio ad, tempora nam, sequi impedit fugiat suscipit qui modi quasi nobis repellendus ab atque molestias reprehenderit.</p>
 
     </section>
+
 </body>
-<script>
-        let botones = document.getElementById("cartadormitorio");
-        let divDormitorios = document.getElementById("DORMITORIOS");
-    funcionAbrirCarta = function() {
-        if (divDormitorios.style.display=="none") {
-            divDormitorios.style.display = "Block";
-        } else {
-            divDormitorios.style.display = "none";
-        }
-    }
-    botones.addEventListener('click',funcionAbrirCarta)
-</script>
+
+<script src="script.js"></script>
+
 </html>
