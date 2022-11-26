@@ -29,3 +29,41 @@ botones.forEach((element,index) =>{
         divTextoaExpandir[index].classList.toggle("abrir_cerrar");
     });
 });
+
+//FUNCION PARA EL CARROUSEL DEL DORMITORIO
+
+let grande  =   document.querySelector(".grande");
+let punto   =   document.querySelectorAll(".punto");
+
+punto.forEach( (cadaPunto, i) => {
+    punto[i].addEventListener("click",()=>{
+        let posicion = i
+        let operacion = posicion * -50
+
+        grande.style.transform = `translateX(${operacion}%)`
+        punto.forEach((cadaPunto,i)=>{
+            punto[i].classList.remove("activo")
+        })
+        punto[i].classList.add("activo")
+
+    })
+})
+
+//FUNCION PARA EL CARROUSEL DEL BAÑO
+
+let grandebaño  =   document.querySelector(".grandebaño");
+let puntobaño   =   document.querySelectorAll(".puntobaño");
+
+puntobaño.forEach( (cadaPunto, i) => {
+    puntobaño[i].addEventListener("click",()=>{
+        let posicionBaño = i
+        let operacionBaño = posicionBaño * -50
+
+        grandebaño.style.transform = `translateX(${operacionBaño}%)`
+        puntobaño.forEach((cadaPunto,i)=>{
+            puntobaño[i].classList.remove("activo")
+        })
+        puntobaño[i].classList.add("activo")
+
+    })
+})

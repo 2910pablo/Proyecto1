@@ -5,15 +5,15 @@ body{
     background-color: rgb(255, 254, 254);
     margin: 0;
 }
+body ul {
+    list-style: none;
+    padding: 0%;
+}
 
 section {
     scroll-margin-top: 100px;
 }
 
-body ul {
-    list-style: none;
-    padding: 0%;
-}
 .cabecera {
     width: 100%;
     position: fixed;
@@ -88,9 +88,6 @@ h2 {
     font-size: 40px;
     margin: 40px;
 }
-
-/* CARTAS */
-
 #contenedorcartas {
     display: flex;
     justify-content: space-between;
@@ -114,71 +111,80 @@ h2 {
 }
 
 .fotos-a-expandir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 15px 0px;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.6s ease-out ;
+
 }
 
 .fotos-a-expandir img {
     border-radius: 15px;
+    width: 40%;
 }
 
 .abrir_cerrar {
-    max-height: 10000px;
+    max-height: 600px;
     transition: max-height 0.7s ease-in ;
     text-align: center;
     margin: 15px 0px;
 }
 
-.contenedor-carrusel {
-    height: 600px;
+.carrousel {
+    width: 40%;
+    max-width: 40%;
+    overflow: hidden;
 }
 
-.carrusel {
-    z-index: 2;
-    position: relative;
-    border: black solid 1px;
-    height: 100%;
-}
-
-.tarjeta-carrusel {
-    z-index: 1;
-}
-
-#carrusel-1 {
-    background-color: aqua;
-}
-
-#carrusel-2 {
-    background-color: #acff2f60;
-}
-
-#carrusel-3 {
-    background-color: rgba(165, 42, 42, 0.308);
-}
-
-.flechas-carrusel {
-    background-color: rgba(172, 255, 47, 0.315);
-    height: 100px;
-    position: absolute;
-    top: 0;
-    width: 100%;
+.grande, .grandebaño {
+    width: 200%;
     display: flex;
-    text-align: center;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-between;
-    z-index: 1;
-    height: 100%;
-    padding: 2.5%;
+    transition: all 0.7s ease;
+    transform: translateX(0%);
 }
 
-.flechas-carrusel a {
-    text-decoration: none;
+.grandebaño {
+    transform: translateX(0%);
 }
 
-/*UBICACION*/
+.carrousel  .img {
+    width: calc(100%/2);
+}
+
+.carrousel .puntos {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.punto, .puntobaño {
+    box-sizing: content-box;
+    width: 1.25em;
+    height: 1.25em;
+    margin: 0 1em;
+    border-radius: 50%;
+    border: solid #eee 1px;
+    box-shadow: #eee 0px 0px 5px;
+}
+
+.punto:hover, .puntobaño:hover {
+    background-color: rgba(187, 187, 187, 0.336);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.activo {
+    background-color: rgb(187, 187, 187);
+}
 
 #contenedor-ubicacion {
     width: fit-content;
@@ -189,7 +195,13 @@ h2 {
     justify-content: center;
 }
 
-#contenedor-ubicacion-texto>h4,li {
+#contenedor-ubicacion-texto>h4 {
+    text-align: left;
+    font-family: sans-serif;
+    padding: 10px 120px 10px 10px;
+}
+
+#contenedor-ubicacion-texto li {
     text-align: left;
     font-family: sans-serif;
     padding: 10px 120px 10px 10px;
