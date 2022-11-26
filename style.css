@@ -5,6 +5,11 @@ body{
     background-color: rgb(255, 254, 254);
     margin: 0;
 }
+
+section {
+    scroll-margin-top: 100px;
+}
+
 body ul {
     list-style: none;
     padding: 0%;
@@ -83,6 +88,9 @@ h2 {
     font-size: 40px;
     margin: 40px;
 }
+
+/* CARTAS */
+
 #contenedorcartas {
     display: flex;
     justify-content: space-between;
@@ -118,11 +126,59 @@ h2 {
 }
 
 .abrir_cerrar {
-    max-height: 600px;
+    max-height: 10000px;
     transition: max-height 0.7s ease-in ;
     text-align: center;
     margin: 15px 0px;
 }
+
+.contenedor-carrusel {
+    height: 600px;
+}
+
+.carrusel {
+    z-index: 2;
+    position: relative;
+    border: black solid 1px;
+    height: 100%;
+}
+
+.tarjeta-carrusel {
+    z-index: 1;
+}
+
+#carrusel-1 {
+    background-color: aqua;
+}
+
+#carrusel-2 {
+    background-color: #acff2f60;
+}
+
+#carrusel-3 {
+    background-color: rgba(165, 42, 42, 0.308);
+}
+
+.flechas-carrusel {
+    background-color: rgba(172, 255, 47, 0.315);
+    height: 100px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    height: 100%;
+    padding: 2.5%;
+}
+
+.flechas-carrusel a {
+    text-decoration: none;
+}
+
+/*UBICACION*/
 
 #contenedor-ubicacion {
     width: fit-content;

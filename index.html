@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/83717dddff.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<!-- CABECERA-->
+
     <header class="cabecera">
         <a href="#logo" id="logo">Villa Ana María</a>
         <div class="contenedor">
@@ -17,9 +21,13 @@
         </div>
     </header>
 
+<!-- FOTO INICIAL-->
+
     <section id="foto-inicial">
         <h1>Villa Ana María</h1>
     </section>
+
+<!--QUIENES SOMOS-->
 
     <section id="presentacion">
         <h2>QUIENES SOMOS</h2>
@@ -33,10 +41,48 @@
         </div>
     </section>
     
+<!--TARJETAS CON FOTOS-->
+
     <section>
         <div class="fotos-a-expandir">
-            <img src="/fotografias/dormitorio1.jpg" alt="dormitorio" width="50%">
+            <div class="contenedor-carrusel">
+                <div class="carrusel" id="carrusel-1">
+                    <div class="tarjeta-carrusel"><img src="/fotografias/dormitorio1.jpg" alt="dormitorio" width="50%"></div>
+                    <div class="flechas-carrusel">
+                        <a href="#carrusel-3" class="flechas">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="#carrusel-2">
+                            <i class="fa-solid fa-chevron-right"></i>                        </a>
+                    </div>
+                </div>
+
+                <div class="carrusel" id="carrusel-2">
+                    <div class="tarjeta-carrusel"><img src="/fotografias/dormitorio2.jpg" alt="dormitorio" width="50%"></div>
+                    <div class="flechas-carrusel">
+                        <a href="#carrusel-1">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="#carrusel-3">
+                            <i class="fa-solid fa-chevron-right"></i>                        </a>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carrusel" id="carrusel-3">
+                    <div class="tarjeta-carrusel1"><img src="/fotografias/dormitorio3.jpg" alt="dormitorio" width="50%"></div>
+                    <div class="flechas-carrusel">
+                        <a href="#carrusel-2">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="#carrusel-1">
+                            <i class="fa-solid fa-chevron-right"></i>                        </a>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="fotos-a-expandir">
             <img src="/fotografias/baño1.jpg" alt="baño" width="50%">
         </div>
@@ -48,10 +94,14 @@
         </div>
     </section>
 
+<!--SECCIÓN CONTACTO-->
+
     <section id="contacto">
         <h2>CONTACTO</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, ipsum dignissimos veritatis earum enim mollitia quae. Amet dicta odit dignissimos? At, sint aut expedita dolorum assumenda deserunt soluta consectetur rem?</p>
     </section>
+
+<!--SECCION UBICACION-->
 
     <section id="ubicacion">
         <h2>UBICACION</h2>
@@ -76,6 +126,8 @@
             </div>
         </div>
     </section>
+
+<!--FOOTER-->
 
     <footer>
         <div>
